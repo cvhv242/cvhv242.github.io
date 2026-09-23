@@ -475,7 +475,7 @@ caption::before {
 }
 
 article {
-  counter-reset: profile-section;
+  counter-reset: profile-section figcaption;
 }
 
 article > section {
