@@ -127,6 +127,24 @@
         behaviorMode: 1 // 1 = Run away from mouse
       });
       cat2.start();
+
+      const catSize = 72;
+      const placeCat = (cat, x, y) => {
+        cat.x = x;
+        cat.y = y;
+        cat.logicX = x;
+        cat.logicY = y;
+        cat.prevLogicX = x;
+        cat.prevLogicY = y;
+        cat.targetX = x + 16;
+        cat.targetY = y + 31;
+        cat.oldTargetX = cat.targetX;
+        cat.oldTargetY = cat.targetY;
+        cat.updatePosition();
+      };
+
+      placeCat(cat1, 0, 0);
+      placeCat(cat2, Math.max(0, window.innerWidth - catSize), 0);
     });
   </script>
 
