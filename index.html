@@ -15,7 +15,7 @@
   <style>
     /* Changes the cursor globally for the entire page */
     html, body, a, button {
-      cursor: url('https://img.icons8.com/?size=32&id=2zNaZypaHVTa&format=png') 16 16, auto !important;
+      cursor: url('https://img.icons8.com/?size=28&id=2zNaZypaHVTa&format=png') 32 32, auto !important;
     }
   </style>
 
@@ -109,7 +109,27 @@
   <footer>
     <p>© 2026 Harsha Chinta. Built with <a href="https://latex.vercel.app/">LaTeX.css</a>.</p>
   </footer>
-  <script src="https://louisabraham.github.io/nekojs/neko.js" data-autostart></script>
+  <script src="https://louisabraham.github.io/nekojs/neko.js"></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      // Spawn Cat 1 (Default behavior: Chases your mouse)
+      const cat1 = createNeko({
+        startX: 100,
+        startY: 100,
+        behaviorMode: 0 // 0 = Chase mouse
+      });
+      cat1.start();
+
+      // Spawn Cat 2 (Alternative behavior: Runs away from your mouse)
+      const cat2 = createNeko({
+        startX: 500,
+        startY: 300,
+        behaviorMode: 1 // 1 = Run away from mouse
+      });
+      cat2.start();
+    });
+  </script>
+
 </body>
 
 </html>

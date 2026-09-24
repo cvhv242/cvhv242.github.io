@@ -100,6 +100,11 @@
   box-sizing: border-box;
 }
 
+.neko {
+  width: 64px !important;
+  height: 64px !important;
+}
+
 :root {
   --body-color: hsl(0, 5%, 10%);
   --body-bg-color: hsl(42, 24%, 97%);
