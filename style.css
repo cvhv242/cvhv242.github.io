@@ -427,6 +427,15 @@ caption::before {
   font-variant-caps: normal;
 }
 
+.email-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  transform: scale(0.40);
+  transform-origin: center;
+}
+
 .site-header nav {
   margin-top: 0.75rem;
   text-align: center;
